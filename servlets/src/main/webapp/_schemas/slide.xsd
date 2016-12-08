@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="/_skins/default/xslt/xsd.xslt"?>
+<schema targetNamespace="http://vlapin.ru/presentation/slide"
+        xmlns:sld="http://vlapin.ru/presentation/slide"
+        elementFormDefault="qualified"
+
+        xmlns="http://www.w3.org/2001/XMLSchema">
+
+    <element name="theses" type="sld:theses"/>
+
+    <complexType name="theses">
+        <sequence>
+            <element name="thesis" type="sld:thesis"/>
+        </sequence>
+        <attribute name="title" type="string" use="optional"/>
+    </complexType>
+
+    <complexType name="thesis" mixed="true">
+        <all>
+            <element name="thesis" type="sld:thesis"/>
+            <element name="code" type="string"/>
+            <element name="mark" type="string"/>
+            <element name="link">
+                <complexType>
+                    <attribute name="address" type="anyURI"/>
+                    <attribute name="hint" type="normalizedString"/>
+                </complexType>
+            </element>
+        </all>
+    </complexType>
+</schema>

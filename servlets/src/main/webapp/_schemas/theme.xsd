@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="/_skins/default/xslt/xsd.xslt"?>
+<schema targetNamespace="http://vlapin.ru/presentation/theme"
+        xmlns:thm="http://vlapin.ru/presentation/theme"
+        elementFormDefault="qualified"
+
+        xmlns:sld="http://vlapin.ru/presentation/slide"
+        xmlns:prsn="http://vlapin.ru/presentation/person"
+        xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://vlapin.ru/presentation/slide /_schemas/slide.xsd
+                            http://vlapin.ru/presentation/person /_schemas/person.xsd">
+
+    <import namespace="http://vlapin.ru/presentation/slide" schemaLocation="slide.xsd"/>
+    <import namespace="http://vlapin.ru/presentation/person" schemaLocation="person.xsd"/>
+
+    <element name="theme">
+        <complexType>
+            <sequence>
+                <element name="authors">
+                    <complexType>
+                        <sequence>
+                            <element ref="prsn:person" maxOccurs="unbounded"/>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element ref="sld:theses"/>
+            </sequence>
+            <attribute name="title" type="normalizedString"/>
+            <attribute name="subtitle" type="normalizedString"/>
+            <attribute name="lang" type="language" default="en"/>
+        </complexType>
+    </element>
+
+</schema>

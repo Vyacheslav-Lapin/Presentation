@@ -1,0 +1,6 @@
+rootProject.name = 'Presentation'
+
+include 'core',
+        'jdbc',
+        'xml',
+        'servlets'

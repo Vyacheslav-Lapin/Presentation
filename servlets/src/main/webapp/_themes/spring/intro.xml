@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="/_skins/default/xslt/theme.xslt"?>
+<thm:theme title="Spring Framework"
+           subtitle="Введение"
+           lang="ru"
+           xmlns:thm="http://vlapin.ru/presentation/theme"
+           xmlns:prsn="http://vlapin.ru/presentation/person"
+           xmlns="http://vlapin.ru/presentation/slide"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://vlapin.ru/presentation/slide /_schemas/slide.xsd
+                               http://vlapin.ru/presentation/person /_schemas/person.xsd
+                               http://vlapin.ru/presentation/theme /_schemas/theme.xsd">
+
+    <thm:authors>
+        <prsn:person>
+            <prsn:name last="Лапин" first="Вячеслав" patronymic="Юрьевич"/>
+            <prsn:contacts>
+                <prsn:contact type="vk" value="selavy"/>
+                <prsn:contact type="fb" value="selavy"/>
+                <prsn:contact type="linkedIn" value="selavy"/>
+                <prsn:contact type="googlePlus" value="vyacheslav.lapin"/>
+                <prsn:contact type="site" value="vlapin.ru"/>
+            </prsn:contacts>
+            <prsn:certificates>
+                <prsn:certificate abbreviation="SCJP" company="Sun Microsystems"/>
+            </prsn:certificates>
+        </prsn:person>
+    </thm:authors>
+
+    <theses title="Знакомство">
+        <thesis>легковесный, но гибкий и всеобъемлющий фреймворк для любых приложений</thesis>
+        <thesis>с открытым исходным кодом</thesis>
+        <thesis>фреймворк целого приложения, а не одного его слоя</thesis>
+        <thesis>содержит несколько фреймворков</thesis>
+    </theses>
+
+    <theses title="Знакомство">
+        <thesis>Род Джонсон (Rod Johnson) создал Spring в 2003 году</thesis>
+        <thesis>
+            Spring «вырос» из книг «Expert One on One Java J2EE Design and Development» и «J2EE Development Without EJB»
+        </thesis>
+        <thesis>Главная идея Spring – упростить традиционный подход к разработке Java EE приложений</thesis>
+    </theses>
+
+    <theses title="Знакомство">
+        <thesis>
+            Основные ресурсы:
+            <thesis>
+                <link address="http://spring.io/"/>
+                <thesis>
+                    <link address="http://spring.io/blog/"/>
+                </thesis>
+            </thesis>
+            <thesis>
+                <link address="https://twitter.com/springcentral">@springcentral</link>
+            </thesis>
+            <thesis>
+                <link address="https://twitter.com/springframework">@springframework</link>
+            </thesis>
+            <thesis>
+                <link address="http://infoq.com/spring/"/>
+            </thesis>
+        </thesis>
+    </theses>
+
+
+</thm:theme>

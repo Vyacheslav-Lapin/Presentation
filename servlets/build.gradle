@@ -1,0 +1,27 @@
+apply plugin: 'war'
+
+dependencies {
+
+    compile project(":core")
+    compile project(":jdbc")
+    compile project(":xml")
+
+    // Tomcat internal libraries
+    providedCompile 'org.apache.tomcat:tomcat-api:+'
+    providedCompile 'org.apache.tomcat:tomcat-jsp-api:+'
+
+    // JSTL
+//    compile 'javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:+'
+//    compile 'org.glassfish.web:javax.servlet.jsp.jstl:+'
+
+    // Validation
+//    compile 'javax.validation:validation-api:+'
+
+    // REST
+//    compile 'org.glassfish.jersey.containers:jersey-container-servlet:+' // Jersey
+//    compile 'org.glassfish.jersey.media:jersey-media-moxy:+' // Jersey
+//    compile 'com.fasterxml.jackson.core:jackson-databind:+' // Jackson
+
+    // WebSockets
+//    compile 'org.apache.tomcat:tomcat-websocket-api:+'
+}
